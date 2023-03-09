@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #927dfc;
+}
+.wrapper {
+  width: 480px;
+  background-color: #fff;
+  border-radius: 9px;
+  padding: 30px;
+}
+.wrapper .upload-box {
+  height: 225px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  flex-direction: column;
+  border-radius: 5px;
+  border: 2px dashed #afafaf;
+}
+.wrapper .upload-box img {
+  width: 70px;
+  height: 70px;
+}
+.wrapper.active .upload-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}.wrapper.active .upload-box{
+    border: none;
+}
+.wrapper.active .upload-box p {
+  display: none;
+}
+.wrapper .upload-box p {
+  font-size: 1.06rem;
+  margin-top: 20px;
+}
+.wrapper .content {
+  margin-top: 28px;
+}
+.wrapper .content .row {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper .content .row .column {
+  width: calc(100% / 2 - 15px);
+}
+.wrapper .content .row .column label {
+  font-size: 1.06rem;
+  margin-bottom: 6px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.wrapper .content .sizes .column input {
+  margin-top: 10px;
+  width: 100%;
+  height: 49px;
+  outline: none;
+  padding: 0px 15px;
+  font-size: 1.06rem;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+}
+.wrapper .content .sizes .column input:focus {
+  padding: 0px 14px;
+  border: 2px solid #927dfc;
+}
+.wrapper .content .checkboxes {
+  margin-top: 20px;
+}
+.wrapper .content .checkboxes .column {
+  display: flex;
+  align-items: center;
+}
+.wrapper .content .checkboxes .column input {
+  width: 17px;
+  height: 17px;
+  accent-color: #927dfc;
+  margin-right: 9px;
+}
+.wrapper .content .download-btn {
+  width: 100%;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.06rem;
+  border-radius: 5px;
+  padding: 15px 0px;
+  margin: 30px 0 10px;
+  background: #927dfc;
+  text-transform: uppercase;
+}
